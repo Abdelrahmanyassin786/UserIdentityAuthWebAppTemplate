@@ -36,7 +36,6 @@ namespace UserIdentityAuthWebAppTemplate.Services
                 return true;
             }
             return false;
-
         }
 
         public async Task<LoginResponseDto> Login(LoginRequestDto loginRequestDto)
@@ -53,7 +52,7 @@ namespace UserIdentityAuthWebAppTemplate.Services
             //if user was found , Generate JWT Token
             var roles = await _userManager.GetRolesAsync(user);
             var token = _jwtTokenGenerator.GenerateToken(user, roles);
-
+            //var identityResult = await _userManager.SetAuthenticationTokenAsync(user, "Bearer", "Bearer", token);
             UserDto userDTO = new()
             {
                 Email = user.Email,
@@ -79,7 +78,8 @@ namespace UserIdentityAuthWebAppTemplate.Services
                 Email = registrationRequestDto.Email,
                 NormalizedEmail = registrationRequestDto.Email.ToUpper(),
                 Name = registrationRequestDto.Name,
-                PhoneNumber = registrationRequestDto.PhoneNumber
+                PhoneNumber = registrationRequestDto.PhoneNumber,
+                EmailConfirmed = true,
             };
 
             try

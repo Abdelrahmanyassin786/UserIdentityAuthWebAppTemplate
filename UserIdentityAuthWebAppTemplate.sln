@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserIdentityAuthWebAppTemplate", "UserIdentityAuthWebAppTemplate\UserIdentityAuthWebAppTemplate.csproj", "{CF21B526-23F8-45AE-A805-1618D4C8BCEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationToUseWithUserIdentity", "MyWebApplicationToUseWithUserIdentity\MyWebApplicationToUseWithUserIdentity.csproj", "{4146A763-3EEE-4178-A572-E0650926D09C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CF21B526-23F8-45AE-A805-1618D4C8BCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF21B526-23F8-45AE-A805-1618D4C8BCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF21B526-23F8-45AE-A805-1618D4C8BCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4146A763-3EEE-4178-A572-E0650926D09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4146A763-3EEE-4178-A572-E0650926D09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4146A763-3EEE-4178-A572-E0650926D09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4146A763-3EEE-4178-A572-E0650926D09C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
